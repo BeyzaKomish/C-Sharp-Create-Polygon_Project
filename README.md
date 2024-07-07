@@ -63,4 +63,6 @@ This C# program allows users to create and manipulate polygons using a graphical
 - Default and random values are provided for ease of use. If these values cause issues, feel free to use alternative values.
 - The program uses the midpoint of the PictureBox as the center point for drawing the polygon.
 
+## ! Please check the Instruction file for more information. 
+
 
