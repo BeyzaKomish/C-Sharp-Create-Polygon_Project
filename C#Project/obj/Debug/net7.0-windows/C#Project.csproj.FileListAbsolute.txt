@@ -1,0 +1,16 @@
+C:\Users\beyza\source\repos\C#Project\bin\Debug\net7.0-windows\C#Project.exe
+C:\Users\beyza\source\repos\C#Project\bin\Debug\net7.0-windows\C#Project.deps.json
+C:\Users\beyza\source\repos\C#Project\bin\Debug\net7.0-windows\C#Project.runtimeconfig.json
+C:\Users\beyza\source\repos\C#Project\bin\Debug\net7.0-windows\C#Project.dll
+C:\Users\beyza\source\repos\C#Project\bin\Debug\net7.0-windows\C#Project.pdb
+C:\Users\beyza\source\repos\C#Project\obj\Debug\net7.0-windows\C_Project.Form1.resources
+C:\Users\beyza\source\repos\C#Project\obj\Debug\net7.0-windows\C#Project.csproj.GenerateResource.cache
+C:\Users\beyza\source\repos\C#Project\obj\Debug\net7.0-windows\C#Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\beyza\source\repos\C#Project\obj\Debug\net7.0-windows\C#Project.AssemblyInfoInputs.cache
+C:\Users\beyza\source\repos\C#Project\obj\Debug\net7.0-windows\C#Project.AssemblyInfo.cs
+C:\Users\beyza\source\repos\C#Project\obj\Debug\net7.0-windows\C#Project.csproj.CoreCompileInputs.cache
+C:\Users\beyza\source\repos\C#Project\obj\Debug\net7.0-windows\C#Project.dll
+C:\Users\beyza\source\repos\C#Project\obj\Debug\net7.0-windows\refint\C#Project.dll
+C:\Users\beyza\source\repos\C#Project\obj\Debug\net7.0-windows\C#Project.pdb
+C:\Users\beyza\source\repos\C#Project\obj\Debug\net7.0-windows\C#Project.genruntimeconfig.cache
+C:\Users\beyza\source\repos\C#Project\obj\Debug\net7.0-windows\ref\C#Project.dll

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "tHZvKXWE/T3aQIuzJPVD8HsROjy/PrFWwXGLZ3oYGKGmz4AxXczqHNpXLZv2xYujOU1Zb6EWeKRNS5fCxQWfxA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\beyza\\Downloads\\C#Project2\\C#Project\\B231202072.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\beyza\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.16\\microsoft.windowsdesktop.app.ref.7.0.16.nupkg.sha512",
+    "C:\\Users\\beyza\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.16\\microsoft.netcore.app.ref.7.0.16.nupkg.sha512",
+    "C:\\Users\\beyza\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.16\\microsoft.aspnetcore.app.ref.7.0.16.nupkg.sha512",
+    "C:\\Users\\beyza\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.16\\microsoft.netcore.app.host.win-x64.7.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}
