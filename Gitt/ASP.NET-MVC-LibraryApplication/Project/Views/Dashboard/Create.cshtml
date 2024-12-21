@@ -1,0 +1,108 @@
+﻿@model Project.Models.Book
+
+
+@{
+	ViewData["Title"] = "Add Book";
+}
+
+<h1>Create Book</h1>
+
+<form method="post" asp-controller="Dashboard" asp-action="Create">
+
+
+    <div class="form-group">
+        <label for="Title">Title</label>
+        <input type="text" class="form-control" id="Title" name="Title" required />
+    </div>
+
+    <div class="form-group">
+        <label for="ISBN">ISBN</label>
+        <input type="text" class="form-control" id="ISBN" name="ISBN" required />
+    </div>
+
+    <div class="form-group">
+        <label for="Genres">Genres</label>
+        <select name="GenreIds" >
+
+            @if (ViewBag.Genres != null)
+            {//This idv is for the GenreId property is look through all the genres in the viewbage and loops through them 
+                @foreach (var genre in (List<Project.Models.Genre>)ViewBag.Genres)
+                {//and displays them same for the authors and the categories
+                    <option value="@genre.Id">@genre.Name</option>
+                }
+
+            }
+            else
+            {
+                <option>No genres available</option>
+            }
+
+           
+           
+
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="Authors">Authors</label>
+        <select name="AuthorIds" >
+
+            @if(ViewBag.Authors != null)
+            {
+                @foreach (var author in (List<Project.Models.Author>)ViewBag.Authors)
+                {
+                    <option value="@author.Id">@author.Name</option>
+                }
+
+                
+            }
+            else
+            {
+                <option>No Authors available</option>
+            }
+        
+        </select>
+    </div>
+
+
+     <div class="form-group">
+        <label for="Categories">Categories</label>
+        <select name="CategoryIds" >
+
+            @if(ViewBag.Categories != null)
+            {
+                @foreach (var category in (List<Project.Models.Category>)ViewBag.Categories)
+                {
+                    <option value="@category.Id">@category.Name</option>
+                }
+
+                
+            }
+            else
+            {
+                <option>No Categories available</option>
+            }
+        
+        </select>
+    </div>
+
+
+
+    <div class="form-group">
+        <label for="PublishedDate">Published Date</label>
+        <input type="date" class="form-control" id="PublishedDate" name="PublishedDate" required />
+    </div>
+
+
+    <div class="form-group">
+        <label for="IsBorrowed">Is Borrowed?</label>
+        <input type="checkbox" id="IsBorrowed" name="IsBorrowed" />
+    </div>
+
+
+
+
+
+
+
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>

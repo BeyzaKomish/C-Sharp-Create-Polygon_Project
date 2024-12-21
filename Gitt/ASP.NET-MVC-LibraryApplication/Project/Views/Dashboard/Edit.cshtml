@@ -1,0 +1,49 @@
+﻿@model Book
+
+
+
+<form asp-controller="Dashboard"  asp-action="Edit" method="post">
+
+    <div>
+        <label asp-for="Title"></label>
+        <input asp-for="Title" />
+    </div>
+     <div>
+        <label asp-for="ISBN"></label>
+        <input asp-for="ISBN" />
+    </div>
+    <div>
+        <label asp-for="PublishedDate"></label>
+        <input asp-for="PublishedDate" type="date" />
+    </div>
+   
+    <div>
+        <label>Genres</label>
+        @foreach (var genre in ViewBag.Genres)
+        {//Gives the parameter to the input as name and displays the genres names that are stores in the viewbag and same with the author and category
+            <input type="checkbox" name="GenreIds" value="@genre.Id" @(Model.Genres.Any(g => g.Id == genre.Id) ? "checked" : "") />
+            <label>@genre.Name</label>
+        }
+    </div>
+
+    <div>
+        <label>Authors</label>
+        @foreach (var author in ViewBag.Authors)
+        {
+            <input type="checkbox" name="AuthorIds" value="@author.Id" @(Model.Authors.Any(a => a.Id == author.Id) ? "checked" : "") />
+            <label>@author.Name</label>
+        }
+    </div>
+
+    <div>
+        <label>Categories</label>
+        @foreach (var category in ViewBag.Categories)
+        {
+            <input type="checkbox" name="CategoryIds" value="@category.Id" @(Model.Categories.Any(a => a.Id == category.Id) ? "checked" : "") />
+            <label>@category.Name</label>
+        }
+    </div>
+ 
+
+    <button type="submit">Save Changes</button>
+</form>

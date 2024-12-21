@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Student Dashboard";
+}
+
+<h2>Student Dashboard</h2>
+
+<p>Welcome, Student! Here you can view available books and make reservations.</p>
+
+<a asp-controller="Dashboard" asp-action="ListBooks" class="btn btn-primary">All Books</a>
+
+<a asp-controller="Dashboard" asp-action="ListCategories" class="btn btn-primary">Categorized Books</a>
+
+
+<a asp-controller="Dashboard" asp-action="ListBorrowedBooks" class="btn btn-primary">Borrowed Books</a>
+
+<a asp-controller="Dashboard" asp-action="ListReviews" class="btn btn-primary">Reviews Of Books</a>
+

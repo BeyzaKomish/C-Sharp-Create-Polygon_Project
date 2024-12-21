@@ -1,0 +1,38 @@
+﻿@model Project.Models.User
+@{
+    ViewData["Title"] = "User Information";
+}
+
+<h2 class="text-center">@ViewData["Title"]</h2>
+
+<div class="container mt-4">
+    <div class="card p-4 shadow-sm">
+        <h4 class="mb-3">General Information</h4>
+        <p><strong>Username:</strong> @Model.UserName</p>
+        <p><strong>Email:</strong> @Model.Email</p>
+        <p><strong>Address:</strong> @Model.Adress</p>
+
+        @if (ViewData["Librarian"] != null)
+        {// Displaying the Info props according to the role
+            var librarian = ViewData["Librarian"] as Project.Models.Librarian;
+            if (librarian != null)
+            {
+                <hr />
+                <h4>Librarian Details</h4>
+                <p><strong>Employee ID:</strong> @librarian.EmployeeID</p>
+                <p><strong>Department:</strong> @librarian.Department</p>
+            }
+        }
+        else if (ViewData["Student"] != null)
+        {
+            var student = ViewData["Student"] as Project.Models.Student;
+            if (student != null)
+            {
+                <hr />
+                <h4>Student Details</h4>
+                <p><strong>Student ID:</strong> @student.StudentID</p>
+                <p><strong>GPA:</strong> @student.GPA</p>
+            }
+        }
+    </div>
+</div>
